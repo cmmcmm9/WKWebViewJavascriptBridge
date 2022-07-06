@@ -89,7 +89,7 @@ public class WKWebViewJavascriptBridgeBase: NSObject {
                     log("NoHandlerException, No handler for message from JS: \(message)")
                     continue
                 }
-                handler(message["data"] as? [String : Any], callback)
+                handler(message["data"], callback)
             }
         }
     }
