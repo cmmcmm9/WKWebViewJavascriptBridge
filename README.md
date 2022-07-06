@@ -1,7 +1,7 @@
-# Fork Changes
-Previously, any call handlers would only accept data in the format `[String: Any]?`. That means that the javascript calls could only pass in JSON objects. Now, all call handlers are responsible for converting the `Any` type to what is expected, and javascript is free to pass in any parseable value such as: `String`, `Boolean`, `Number`, `JsonObject` or `JsonArray`. The value just needs to be parseable by the [JSONSerialization](https://developer.apple.com/documentation/foundation/jsonserialization) class.
-
 ![](Rources/WKWebViewJavascriptBridge.jpg)
+
+# Fork Changes
+*PLEASE READ:* Previously, any call handlers would only accept data in the format `[String: Any]?`. That means that the javascript calls could only pass in JSON objects. Now, all call handlers are responsible for converting the `Any` type to what is expected, and javascript is free to pass in any parseable value such as: `String`, `Boolean`, `Number`, `JsonObject` or `JsonArray`. The value just needs to be parseable by the [JSONSerialization](https://developer.apple.com/documentation/foundation/jsonserialization) class.
 
 [![language](https://img.shields.io/badge/Language-Swift-FFA08F.svg)](https://github.com/apple/swift)&nbsp;
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-FE95AE.svg?style=flat)](https://github.com/Carthage/Carthage)&nbsp;
