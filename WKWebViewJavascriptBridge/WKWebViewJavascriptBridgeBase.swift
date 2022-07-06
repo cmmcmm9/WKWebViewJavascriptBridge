@@ -25,7 +25,7 @@ public class WKWebViewJavascriptBridgeBase: NSObject {
     var isLogEnable = false
     
     public typealias Callback = (_ responseData: Any?) -> Void
-    public typealias Handler = (_ parameters: [String: Any]?, _ callback: Callback?) -> Void
+    public typealias Handler = (_ parameters: Any?, _ callback: Callback?) -> Void
     public typealias Message = [String: Any]
     
     weak var delegate: WKWebViewJavascriptBridgeBaseDelegate?
